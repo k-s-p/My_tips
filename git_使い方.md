@@ -22,7 +22,7 @@
     `$ git remote add origin <URL>`
       - 注意<br>
       <font color="Red">fatal: protocol 'https' is not supported</font><br>
-      このエラーがでる場合は以下のコマンドを使用する<br>
+      このエラーがでる場合は以下のコマンドを追記する使用する<br>
       `git remote set-url origin <URL>`
 
 1. プッシュする
