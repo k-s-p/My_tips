@@ -29,9 +29,11 @@
     1. `git add filename`
     1. `git commit -m "Comment"`
     1. `git push origin master`
+    - 最近は、`git push origin main`に変更したほうが良いかも
 
 1. プルする
     1. `git pull origin master`
+    - 最初にプルしたほうが変な状態にならない
 
 - 状態を確認する
 `git status`
@@ -41,4 +43,13 @@
 `git diff`
 
 # ほかのコマンドについて
-後日まとめよう～
+- git counfigでデフォルトのブランチを変更する<br>
+  `git config --global init.defaultBranch main`
+
+- 作成したmasterブランチをmainに変更する方法<br>
+  `git branch -m master main`
+
+- mergeエラー`refusing to merge unrelated histories`が発生する場合<br>
+  `git merge --allow-unrelated-histories origin/main`
+  - --allow-unrelated-historiesオプションについて<br>
+    このオプションを付けないと無関係なヒストリを持つ2つのブランチをマージできない。リモートリポジトリ作成時に編集したREADMEをローカルに取り込まずにコミットしたから、ヒストリが別になったのかな、、、
