@@ -34,6 +34,7 @@
 1. プルする
     1. `git pull origin master`
     - 最初にプルしたほうが変な状態にならない
+    - fetch+mergeをしている、個人で使用するだけならpullで十分？
 
 - 状態を確認する
 `git status`
